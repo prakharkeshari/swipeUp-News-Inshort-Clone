@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#171616"
+    android:layout_height="match_parent"
+    tools:context="codes.codeoutprakhar.viewpager.activity.SearchFilterActivity">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/sas"
+    android:layout_margin="10dp"
+    android:padding="4dp"
+    android:background="@drawable/bottom_design">
+
+    <SearchView
+        android:id="@+id/serchViewA"
+        android:layout_width="match_parent"
+        android:queryHint="search News"
+        android:iconifiedByDefault="false"
+        android:searchIcon="@null"
+        android:layout_toEndOf="@id/backP"
+        android:queryBackground="@android:color/transparent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/backP"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_left"/>
+   </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recyclerSearch"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sas"/>
+
+    <RelativeLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sas"
+        android:background="#171616">
+
+        <ImageView
+            android:id="@+id/gifView"
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/placeholder_bg"
+
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

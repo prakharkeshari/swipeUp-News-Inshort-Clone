@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SwipeUp News</string>
+    <string name="trending">Trending</string>
+    <string name="search">Search</string>
+    <string name="share_menu"><![CDATA[Share/> </menu>]]></string>
+    <string name="share">share</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="more_details"><u>More Details</u></string>
+    <string name="loading_news">loading news</string>
+    <string name="categories">Categories</string>
+    <string name="all">All</string>
+</resources>

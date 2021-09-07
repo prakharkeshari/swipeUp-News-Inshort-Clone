@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#171616"
+    android:layout_height="match_parent"
+    tools:context="codes.codeoutprakhar.viewpager.fragments.SearchFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="#171616"
+        android:layout_height="match_parent"
+        android:layout_margin="9dp"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:lottie_rawRes="@raw/editorial"
+                android:scaleType="centerCrop"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOPICS"
+                android:id="@+id/suggestions"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/baloo_bhai"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/animationView"/>
+
+             <RelativeLayout
+                 android:layout_width="70dp"
+                 android:id="@+id/viewTopics"
+                 android:layout_height="1dp"
+                 android:background="#429BEA"
+                 android:layout_below="@+id/suggestions"
+                 android:layout_marginBottom="9dp"
+                 android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recommend"
+                android:layout_marginBottom="50dp"
+                android:layout_below="@+id/viewTopics"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="match_parent"
+                        android:id="@+id/india"
+                        android:layout_height="165dp"
+                        android:src="@drawable/india"
+                        app:riv_corner_radius="16dip"
+                        android:layout_margin="3dp"
+                        app:riv_border_width="1dip"
+                        android:scaleType="fitXY"
+                        app:riv_border_color="#0787F8"
+                        android:layout_weight="1"
+
+                        app:riv_mutate_background="true"/>
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="match_parent"
+                        android:id="@+id/business"
+                        android:layout_height="165dp"
+                        android:src="@drawable/business"
+                        app:riv_corner_radius="16dip"
+                        app:riv_border_width="1dip"
+                        app:riv_border_color="#0787F8"
+                        android:layout_margin="3dp"
+                        android:scaleType="fitXY"
+                        android:layout_weight="1"
+                        app:riv_mutate_background="true"/>
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="match_parent"
+                        android:id="@+id/politics"
+                        android:layout_height="165dp"
+                        android:src="@drawable/politics"
+                        app:riv_corner_radius="16dip"
+                        app:riv_border_width="1dip"
+                        android:layout_margin="3dp"
+                        android:scaleType="fitXY"
+                        app:riv_border_color="#0787F8"
+                        android:layout_weight="1"
+                        app:riv_mutate_background="true"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="match_parent"
+                        android:id="@+id/sports"
+                        android:layout_height="165dp"
+                        android:src="@drawable/sports"
+                        app:riv_corner_radius="16dip"
+                        android:layout_margin="3dp"
+                        app:riv_border_width="1dip"
+                        android:scaleType="fitXY"
+                        app:riv_border_color="#0787F8"
+                        android:layout_weight="1"
+
+                        app:riv_mutate_background="true"/>
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="165dp"
+                        android:id="@+id/tech"
+                        android:src="@drawable/tech"
+                        app:riv_corner_radius="16dip"
+                        app:riv_border_width="1dip"
+                        app:riv_border_color="#0787F8"
+                        android:layout_margin="3dp"
+                        android:scaleType="fitXY"
+                        android:layout_weight="1"
+                        app:riv_mutate_background="true"/>
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="match_parent"
+                        android:id="@+id/hatke"
+                        android:layout_height="165dp"
+                        android:src="@drawable/hatke"
+                        app:riv_corner_radius="16dip"
+                        app:riv_border_width="1dip"
+                        android:layout_margin="3dp"
+                        android:scaleType="fitXY"
+                        app:riv_border_color="#0787F8"
+                        android:layout_weight="1"
+                        app:riv_mutate_background="true"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="match_parent"
+                        android:id="@+id/startup"
+                        android:layout_height="165dp"
+                        android:src="@drawable/startup"
+                        app:riv_corner_radius="16dip"
+                        android:layout_margin="3dp"
+                        app:riv_border_width="1dip"
+                        android:scaleType="fitXY"
+                        app:riv_border_color="#0787F8"
+                        android:layout_weight="1"
+
+                        app:riv_mutate_background="true"/>
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="165dp"
+                        android:id="@+id/entertain"
+                        android:src="@drawable/entertain"
+                        app:riv_corner_radius="16dip"
+                        app:riv_border_width="1dip"
+                        app:riv_border_color="#0787F8"
+                        android:layout_margin="3dp"
+                        android:scaleType="fitXY"
+                        android:layout_weight="1"
+                        app:riv_mutate_background="true"/>
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="match_parent"
+                        android:id="@+id/international"
+                        android:layout_height="165dp"
+                        android:src="@drawable/international"
+                        app:riv_corner_radius="16dip"
+                        app:riv_border_width="1dip"
+                        android:layout_margin="3dp"
+                        android:scaleType="fitXY"
+                        app:riv_border_color="#0787F8"
+                        android:layout_weight="1"
+                        app:riv_mutate_background="true"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="match_parent"
+                        android:id="@+id/automobile"
+                        android:layout_height="165dp"
+                        android:src="@drawable/automobile"
+                        app:riv_corner_radius="16dip"
+                        android:layout_margin="3dp"
+                        app:riv_border_width="1dip"
+                        android:scaleType="fitXY"
+                        app:riv_border_color="#0787F8"
+                        android:layout_weight="1"
+
+                        app:riv_mutate_background="true"/>
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="165dp"
+                        android:id="@+id/science"
+                        android:src="@drawable/science"
+                        app:riv_corner_radius="16dip"
+                        app:riv_border_width="1dip"
+                        app:riv_border_color="#0787F8"
+                        android:layout_margin="3dp"
+                        android:scaleType="fitXY"
+                        android:layout_weight="1"
+                        app:riv_mutate_background="true"/>
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="165dp"
+                        android:id="@+id/travel"
+                        android:src="@drawable/travel"
+                        app:riv_corner_radius="16dip"
+                        app:riv_border_width="1dip"
+                        android:layout_margin="3dp"
+                        android:scaleType="fitXY"
+                        app:riv_border_color="#0787F8"
+                        android:layout_weight="1"
+                        app:riv_mutate_background="true"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="165dp"
+                        android:id="@+id/miscell"
+                        android:src="@drawable/miscell"
+                        app:riv_corner_radius="16dip"
+                        android:layout_margin="3dp"
+                        app:riv_border_width="1dip"
+                        android:scaleType="fitXY"
+                        app:riv_border_color="#0787F8"
+                        android:layout_weight="1"
+
+                        app:riv_mutate_background="true"/>
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="165dp"
+                        android:id="@+id/fashion"
+                        android:src="@drawable/fashion"
+                        app:riv_corner_radius="16dip"
+                        app:riv_border_width="1dip"
+                        app:riv_border_color="#0787F8"
+                        android:layout_margin="3dp"
+                        android:scaleType="fitXY"
+                        android:layout_weight="1"
+                        app:riv_mutate_background="true"/>
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="165dp"
+                        android:id="@+id/education"
+                        android:src="@drawable/edu"
+                        app:riv_corner_radius="16dip"
+                        app:riv_border_width="1dip"
+                        android:layout_margin="3dp"
+                        android:scaleType="fitXY"
+                        app:riv_border_color="#0787F8"
+                        android:layout_weight="1"
+                        app:riv_mutate_background="true"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
